@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/grid_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/android_card"
+            android:layout_marginTop="20dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/grdItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Texto del menu"
+                android:textStyle="bold"
+                android:textSize="15dp" >
+            </TextView>
+            <TextView
+                android:id="@+id/grItemDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Texto del menu"
+                android:textSize="10dp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        android:layout_gravity="top"
+        android:src="@drawable/shelf_item"/>
+</LinearLayout>

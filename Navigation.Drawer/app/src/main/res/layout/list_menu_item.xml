@@ -1,0 +1,52 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="30dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_shop"
+            android:id="@+id/imgAplicacionList"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la aplicación"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/lblNameAppList"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artista"
+                android:textStyle="bold"
+                android:id="@+id/lblNameArtistList"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Release"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lblReleaseDateList"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        android:src="@drawable/shelf_item"/>
+</LinearLayout>

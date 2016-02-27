@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_kitkat_height"
+        android:background="?colorPrimary"/>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_marginTop="@dimen/status_bar_margin_top"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/madera_clara">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_shop"
+                android:id="@+id/imgApplicationDetail"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de la aplicación"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/lblNameAppDetail"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artista"
+                    android:textStyle="bold"
+                    android:id="@+id/lblNameArtistDetail"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/lblDescriptionAppDetail"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
